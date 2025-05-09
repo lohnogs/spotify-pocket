@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Pocket</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Spotify Pocket</h1>
+      <div class="controls">
+        <!-- Ícone de modo escuro -->
+        <button id="toggle-mode"><i class="fas fa-moon"></i></button>
+        <!-- Ícone de aleatório -->
+        <button id="shuffle-btn"><i class="fas fa-random"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <div id="global-player">
+        <p id="now-playing">🎵 Nenhuma música tocando...</p>
+        <div class="global-controls">
+          <button id="global-pause-btn"><i class="fas fa-pause"></i></button>
+          <input
+            type="range"
+            id="global-progress"
+            value="0"
+            min="0"
+            max="100"
+          />
+        </div>
+      </div>
+      <div class="artist-list">
+        <div class="artist">
+          <div class="image-placeholder">
+            <img src="imagens/macmiller.jpg" alt="Mac Miller" />
+          </div>
+          <h3>Mac Miller</h3>
+          <audio controls data-title="jet fuel">
+            <source src="/Musicas/jett full.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+
+        <div class="artist">
+          <div class="image-placeholder">
+            <img src="/imagens/Kehlani.jpg" alt="Kehlani" />
+          </div>
+          <h3>Kehlani</h3>
+          <audio controls data-title="Clothes Off ">
+            <source src="Musicas/KH.mp3" type="audio/mp3 " />
+          </audio>
+        </div>
+
+        <div class="artist">
+          <div class="image-placeholder">
+            <img src="imagens/Deftones (White Pony).jpg" alt="Deftones" />
+          </div>
+          <h3>Deftones</h3>
+          <audio controls data-title="Change (In the House of Flies)">
+            <source src="Musicas/Deftoness.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+
+        <div class="artist">
+          <div class="image-placeholder">
+            <img
+              src="imagens/Avenged Sevenfold - Avenged Sevenfold (2007).jpg"
+              alt="Avenged Sevenfold"
+            />
+          </div>
+          <h3>Avenged Sevenfold</h3>
+          <audio controls data-title="A Little Piece Of Heaven">
+            <source src="Musicas/avg.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+
+        <div class="artist">
+          <div class="image-placeholder">
+            <img
+              src="imagens/Red Hot Chili Peppers - _Blood Sugar Sex Magik_ is the 5th album by Red Hot Chili Peppers, 24_09_91.jpg"
+              alt="Red Hot Chili Peppers"
+            />
+          </div>
+          <h3>Red Hot Chili Peppers</h3>
+          <audio controls data-title="Under the Bridge">
+            <source src="Musicas/RHCP.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+
+        <div class="artist">
+          <div class="image-placeholder">
+            <img src="imagens/Lp.jpg" alt="Linkin Park" />
+          </div>
+          <h3>Linkin Park</h3>
+          <audio controls data-title="Two Faced">
+            <source src="Musicas/LPP.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+
+        <div class="artist">
+          <div class="image-placeholder">
+            <img src="imagens/cocoj.jpg" alt="Coco Jones" />
+          </div>
+          <h3>Coco Jones</h3>
+          <audio controls data-title=" On Sight">
+            <source src="Musicas/coco.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+    ```
+  </body>
+</html>

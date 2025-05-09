@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #112619;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#now-playing {
+    text-align: center;
+    margin: 20px;
+}
+
+.artist-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.artist {
+    background-color: #223026; 
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+   
+}
+
+body.dark-mode .artist {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.artist h3 {
+    margin-top: 10px;
+}
+
+.image-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #444;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow: hidden; 
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.controls button i {
+    font-size: 20px;
+}
+#global-player {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.global-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+#global-pause-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#global-progress {
+    flex: 1;
+    height: 5px;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
